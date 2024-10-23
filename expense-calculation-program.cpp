@@ -47,10 +47,10 @@ class LinkedList{
         int many;
         double price;
         list <Node>::iterator tpr = node.begin();
+        advance(tpr,n-1);
         cout<<"\n--------------------------------"<<endl;
         cout<<tpr->many<<" "<<tpr->name<<" "<<tpr->price<<endl;
         cout<<"--------------------------------"<<endl<<endl;
-        advance(tpr,n-1);
         do{
           cout<<": ";
           cin>>many>>price;
@@ -168,7 +168,6 @@ int main(){
       cout<<"\n--------------------------------"<<endl;
       cout<<cmp<<" Command is invalid"<<endl;
       cout<<"--------------------------------"<<endl;
-      return 0;
     }
   }
 
